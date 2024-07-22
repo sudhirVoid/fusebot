@@ -1,0 +1,43 @@
+[
+    {
+      "question": "How do I get started?",
+      "answer": "To get started, sign up for an account, and follow the onboarding process to set up your first chatbot. You can upload your documents and links to train the chatbot."
+    },
+    {
+      "question": "What types of documents and links can I upload?",
+      "answer": "You can upload various types of documents such as PDFs, Word documents, and text files. You can also provide links to websites and online resources that you want your chatbot to reference."
+    },
+    {
+      "question": "How does the chatbot use the uploaded documents?",
+      "answer": "The chatbot uses the uploaded documents and links to generate responses based on the content provided. It uses natural language processing to understand the context and provide accurate answers."
+    },
+    {
+      "question": "Is there a limit to the number of documents I can upload?",
+      "answer": "There is no strict limit on the number of documents you can upload, but we recommend keeping it to a manageable number to ensure optimal performance. For large datasets, consider breaking them into smaller chunks."
+    },
+    {
+      "question": "Can I update or delete the documents after uploading?",
+      "answer": "Yes, you can update or delete documents at any time through the dashboard. The changes will be reflected in the chatbot's responses after reprocessing the content."
+    },
+    {
+      "question": "How secure is my data?",
+      "answer": "We take data security very seriously. All documents and links are stored securely, and access is restricted to authorized users only. We also use encryption to protect your data during transmission."
+    },
+    {
+      "question": "What support options are available?",
+      "answer": "We offer a range of support options including email support, a knowledge base, and community forums. For premium users, we also offer live chat and phone support."
+    },
+    {
+      "question": "Can I customize the chatbot's responses?",
+      "answer": "Yes, you can customize the chatbot's responses by providing specific instructions and training data. You can also adjust the settings to refine how the chatbot interacts with users."
+    },
+    {
+      "question": "What is the pricing structure?",
+      "answer": "Our pricing structure is based on a subscription model with different tiers to suit various needs. Visit our pricing page for detailed information on the plans and features available."
+    },
+    {
+      "question": "How can I integrate the chatbot into my website?",
+      "answer": "Integrating the chatbot into your website is easy. We provide an embed code that you can paste into your website's HTML. For more advanced integrations, we offer APIs and SDKs."
+    }
+  ]
+  
