@@ -144,46 +144,8 @@ export default function LandingPage() {
           </div>
         </div>
       </div>
-      {/* FAQs */}
-      <section className="mx-auto max-w-7xl bg-gray-50 px-2 py-10 md:px-0">
-        <div>
-          <div className="mx-auto max-w-2xl lg:text-center">
-            <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
-              Frequently Asked Questions
-            </h2>
-            <p className="mt-4 max-w-xl text-base leading-relaxed text-gray-600 lg:mx-auto">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, assumenda
-            </p>
-          </div>
-          <div className="mx-auto mt-8 max-w-3xl space-y-4 md:mt-16">
-          {faqs.map((faq: FAQ, i: number) => (
-        <div key={i} className="cursor-pointer rounded-md border border-gray-400 shadow-lg transition-all duration-200">
-          <button
-            type="button"
-            className="flex w-full items-center justify-between px-4 py-5 sm:p-6"
-            onClick={() => handleToggle(i)}
-          >
-            <span className="flex text-lg font-semibold text-black">{faq.question}</span>
-            <ChevronUp className={`h-5 w-5 text-gray-500 transition-transform duration-200 ${visibleItems[i] ? 'rotate-180' : ''}`} />
-          </button>
-          {visibleItems[i] && (
-            <div className="px-4 pb-5 sm:px-6 sm:pb-6">
-              <p className="text-gray-500">{faq.answer}</p>
-            </div>
-          )}
-        </div>
-      ))}
-          </div>
-          <p className="textbase mt-6 text-center text-gray-600">
-            Can&apos;t find what you&apos;re looking for?{' '}
-            <a href="#" title="" className="font-semibold text-black hover:underline">
-              Contact our support
-            </a>
-          </p>
-        </div>
-      </section>
-      {/* Pricing Section */}
-      <div className="mx-auto my-12 max-w-7xl md:my-24 lg:my-32">
+            {/* Pricing Section */}
+            <div className="mx-auto my-12 max-w-7xl md:my-24 lg:my-32">
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-6">
           <div className="px-4 py-10 lg:col-span-5 lg:px-0">
             <span className="mb-8 inline-block rounded-full border p-1 px-3 text-xs font-semibold">
@@ -297,6 +259,45 @@ export default function LandingPage() {
           </div>
         </div>
       </div>
+      {/* FAQs */}
+      <section className="mx-auto max-w-7xl bg-gray-50 px-2 py-10 md:px-0">
+        <div>
+          <div className="mx-auto max-w-2xl lg:text-center">
+            <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+              Frequently Asked Questions
+            </h2>
+            <p className="mt-4 max-w-xl text-base leading-relaxed text-gray-600 lg:mx-auto">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, assumenda
+            </p>
+          </div>
+          <div className="mx-auto mt-8 max-w-3xl space-y-4 md:mt-16">
+          {faqs.map((faq: FAQ, i: number) => (
+        <div key={i} className="cursor-pointer rounded-md border border-gray-400 shadow-lg transition-all duration-200">
+          <button
+            type="button"
+            className="flex w-full items-center justify-between px-4 py-5 sm:p-6"
+            onClick={() => handleToggle(i)}
+          >
+            <span className="flex text-lg font-semibold text-black">{faq.question}</span>
+            <ChevronUp className={`h-5 w-5 text-gray-500 transition-transform duration-200 ${visibleItems[i] ? 'rotate-180' : ''}`} />
+          </button>
+          {visibleItems[i] && (
+            <div className="px-4 pb-5 sm:px-6 sm:pb-6">
+              <p className="text-gray-500">{faq.answer}</p>
+            </div>
+          )}
+        </div>
+      ))}
+          </div>
+          <p className="textbase mt-6 text-center text-gray-600">
+            Can&apos;t find what you&apos;re looking for?{' '}
+            <a href="#" title="" className="font-semibold text-black hover:underline">
+              Contact our support
+            </a>
+          </p>
+        </div>
+      </section>
+
     </div>
   )
 }

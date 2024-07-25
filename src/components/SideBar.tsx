@@ -14,7 +14,7 @@ export function Sidebar() {
 
   return (
     <aside
-      className={`flex h-screen ${isExpanded ? 'w-64' : 'w-16'} flex-col overflow-y-auto border-r bg-white py-2 transition-all duration-300 relative`}
+      className={`flex h-screen overflow-hidden ${isExpanded ? 'w-64' : 'w-16'} flex-col overflow-y-auto border-r bg-white py-2 transition-all duration-300 relative`}
     >
       <nav className={`flex flex-1 flex-col ${isExpanded ? 'items-start ml-4' : 'items-center'} mt-6 space-y-6`}>
         <a href="#" className="flex items-center justify-center w-10 h-10 rounded-lg bg-white relative group">

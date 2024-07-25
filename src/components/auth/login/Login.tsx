@@ -3,6 +3,7 @@ import { ArrowRight, Bot } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 import { useAuth } from '../../../contexts/AuthContext';
+import { toast } from 'react-toastify';
 
 export function Login() {
   const navigate = useNavigate();
@@ -22,6 +23,7 @@ export function Login() {
   .catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
+    toast.info('Invalid Email or Password');
   });
   }
   const redirectToRegister = ()=>{

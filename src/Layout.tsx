@@ -11,16 +11,16 @@ export default function Layout() {
   return (
     <div className={`flex ${isProtectedRoute ? 'min-h-screen' : 'flex-col min-h-screen'}`}>
       {isProtectedRoute ? (
-        <div className="flex">
+        <div className="flex justify-center items-center" >
           <Sidebar />
-          <main className="flex-1 ml-8 p-4"> {/* Adjust ml-64 based on Sidebar width */}
+          <main className="flex-1 ml-8 p-4 h-screen overflow-auto no-scrollbar"> {/* Adjust ml-64 based on Sidebar width */}
             <Outlet />
           </main>
         </div>
       ) : (
         <div className="flex flex-col flex-1">
           <NavBar />
-          <main className="flex-1 p-4">
+          <main className="flex-1 p-4 ">
             <Outlet />
           </main>
           <Footer />
