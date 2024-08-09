@@ -354,7 +354,7 @@ const BotStudio: React.FC = () => {
             ) : (
               <ChevronDownIcon className="h-4 w-4 text-gray-700" />
             )}
-          </div>
+          </div> 
         </div>
         <div className="flex flex-row gap-2 pt-2">
           {selectedBatch?.files.map((data: any) => (
