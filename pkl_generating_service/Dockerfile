@@ -1,12 +1,24 @@
 FROM python:3.10-slim
+
 WORKDIR /pkl_generating_service
+
 COPY requirements.txt .
+
 RUN pip install --no-cache-dir -r requirements.txt
+
+# Install Gunicorn server
+RUN pip install --no-cache-dir gunicorn
+
+# copy all other contents 
 COPY . .
+
+#door for outer world
 EXPOSE 5000
-#prevent Python from buffering stdout and stderr
+
+# Prevent Python from buffering stdout and stderr
 ENV PYTHONUNBUFFERED=1
-# defining entry point
+
+# Flask app entry point
 ENV FLASK_APP=app.py
-# Run the application
-CMD ["flask", "run", "--host=0.0.0.0"]
+
+CMD ["gunicorn", "--bind", "0.0.0.0:5000", "app:app"]
