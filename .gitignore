@@ -27,3 +27,4 @@ pkl_generating_service/embeddings
 pkl_generating_service/__pycache__
 pkl_generating_service/myenv
 pkl_generating_service/.env
+pkl_generating_service/pkl
